@@ -1,4 +1,24 @@
 body {
   position: relative;
-  padding-top: 70px;
+  /* padding-top: 70px; */
+}
+
+#link1{
+	padding-top: 50px;
+	background-color: #1E88E5;
+	color: #fff;
+}
+
+#link2{
+	padding-top: 50px;
+	background-color: #ff9800;
+	color: #fff;
+}
+
+.navbar{
+	background-color: #b5b8b9;
+}
+
+.navbar-brand{
+	padding: 0px;
 }
