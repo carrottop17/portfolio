@@ -3,22 +3,85 @@ body {
   /* padding-top: 70px; */
 }
 
+#home{
+	height: 100vh;
+}
+
 #link1{
 	padding-top: 50px;
-	background-color: #1E88E5;
+	background: rgba(30, 136, 229, 0.5);
 	color: #fff;
+	
 }
 
 #link2{
 	padding-top: 50px;
-	background-color: #ff9800;
+	background: rgba(255, 152, 0, 0.5);
 	color: #fff;
 }
 
-.navbar{
-	background-color: #b5b8b9;
+#video-background {
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
 }
 
+a.arrow-down {
+    width: 22px;
+    height: 26px;
+    display: block;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    margin-left: -11px;
+}
+
+a.arrow-down .arrow-one {
+    background-image: url('images/arrow1.png');
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 22px;
+    height: 26px;
+    display: block;
+    -webkit-animation: arrowfadeone 2s infinite;
+    -moz-animation: arrowfadeone 2s infinite;
+    -o-animation: arrowfadeone 2s infinite;
+    animation: arrowfadeone 2s infinite;
+    animation-timing-function: ease-out;
+    animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+}
+
+a.arrow-down .arrow-two {
+    background-image: url('images/arrow1.png');
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 22px;
+    height: 26px;
+    display: block;
+    -webkit-animation: arrowfadetwo 2s infinite;
+    -moz-animation: arrowfadetwo 2s infinite;
+    -o-animation: arrowfadetwo 2s infinite;
+    animation: arrowfadetwo 2s infinite;
+    animation-timing-function: ease-out;
+}
+
+/* .navbar{
+	background-color: #b5b8b9;
+} */
+
 .navbar-brand{
-	padding: 0px;
+	padding: 0px 15px;
+}
+.navbar-brand > img{
+	padding-top: 23px;
 }
