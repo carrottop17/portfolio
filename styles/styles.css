@@ -194,6 +194,16 @@ a.arrow-down .arrow-two {
   color: #EBEBEB;
 }
 
+.modal-content{
+  height: 120px;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #71A9B8;
+  color: #EBEBEB;
+}
+
 /* Pop */
 @-webkit-keyframes hvr-pop {
   50% {

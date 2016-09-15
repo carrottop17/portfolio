@@ -63,6 +63,8 @@ $(function () {
 
     $('#contact-form').on('submit', function (e) {
         if (!e.isDefaultPrevented()) {
+            $('#myModal').modal('show');
+            $('#contact-form')[0].reset();
             var url = "mail.php";
 
             $.ajax({
