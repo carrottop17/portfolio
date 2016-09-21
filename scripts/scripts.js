@@ -2,7 +2,8 @@
 $('body').scrollspy({ target: '.navbar' });
 
 $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip(); 
+    $('[data-toggle="tooltip"]').tooltip();
+
 });
 
 $(function() {
@@ -20,13 +21,24 @@ $(function() {
   });
 });
 
-$(function(){
+
 
 	// Instantiate MixItUp:
 
-	$('#Container').mixItUp();
-
-});
+	$('#Container').mixItUp({
+    animation: {
+    enable: false   
+  },
+  callbacks: {
+    onMixLoad: function(){
+      $(this).mixItUp('setOptions', {
+        animation: {
+          enable: true  
+        },
+      });
+    }
+  }
+  });
 
 jQuery(document).ready(function($){
   // browser window scroll (in pixels) after which the "back to top" link is shown
@@ -89,3 +101,13 @@ $(function () {
         }
     })
 });
+$("[rel='tooltip']").tooltip();    
+ 
+    $('.thumbnail').hover(
+        function(){
+            $(this).find('.caption').slideDown(250); //.fadeIn(250)
+        },
+        function(){
+            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+        }
+    ); 
