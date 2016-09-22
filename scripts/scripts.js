@@ -21,24 +21,19 @@ $(function() {
   });
 });
 
+$(function(){
 
+  // Instantiate MixItUp:
 
-	// Instantiate MixItUp:
-
-	$('#Container').mixItUp({
+  $('#Container').mixItUp({
     animation: {
-    enable: false   
-  },
-  callbacks: {
-    onMixLoad: function(){
-      $(this).mixItUp('setOptions', {
-        animation: {
-          enable: true  
-        },
-      });
+      duration: 500,
+      effects: 'fade scale(0.63) stagger(146ms) translateX(10%) translateY(10%) translateZ(-360px) rotateX(-86deg) rotateY(20deg) rotateZ(101deg)',
+      easing: 'ease'
     }
-  }
   });
+    
+});
 
 jQuery(document).ready(function($){
   // browser window scroll (in pixels) after which the "back to top" link is shown

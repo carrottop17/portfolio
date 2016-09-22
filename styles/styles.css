@@ -181,7 +181,7 @@ a.arrow-down .arrow-two {
 .control-bar{
     padding: 5px 30px;
     text-align: center;
-   /*  background: rgba(231, 231, 231, 0.5); */
+    margin-bottom: 20px;
 }
 
 .btn-send{
@@ -259,6 +259,6 @@ a.arrow-down .arrow-two {
     font-weight: bold;
 }
 
-
+button:focus { outline:0 !important; }
 
 
