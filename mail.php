@@ -8,7 +8,7 @@
       $mail->AddReplyTo($_POST['fullName']); //Form var must be 'fullName'
       $mail->SetFrom($_POST['email']); //form var must be email
       $mail->AddAddress("danielbarranco@gmail.com");
-      $mail->Subject    = "New contact from danielbarrnco.com. FROM - ". $_POST['fullName'];
+      $mail->Subject    = "New contact from danielbarranco.com. FROM - ". $_POST['fullName'];
       $mail->MsgHTML($_POST['body']); //var must be the textarea from your form
 
       if(!$mail->Send()) {
