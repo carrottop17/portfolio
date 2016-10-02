@@ -279,6 +279,7 @@ button:focus { outline:0 !important; }
     padding-top: 50px;
     background-color: #71A9B8;
     height: 100%;
+    width: 100%;
     color: #EBEBEB;
     }
     .profile_image{
@@ -292,9 +293,21 @@ button:focus { outline:0 !important; }
     }
     #projects{
       height: 100%;
+      width: 100%
     }
     #skills{
       height: 100%;
+      width: 100%;
+    }
+    #contact{
+      height: 100%;
+      width: 100%;
+    }
+    .filter{
+      margin-bottom: 5px;
+    }
+    video{
+      visibility: hidden;
     }
 }
 
@@ -313,6 +326,7 @@ button:focus { outline:0 !important; }
     padding-top: 50px;
     background-color: #71A9B8;
     height: 100%;
+    width: 100%;
     color: #EBEBEB;
     }
     .profile_image{
@@ -326,12 +340,21 @@ button:focus { outline:0 !important; }
     }
     #projects{
       height: 100%;
+      width: 100%
     }
     #skills{
       height: 100%;
+      width: 100%;
+    }
+    #contact{
+      height: 100%;
+      width: 100%;
     }
     .filter{
       margin-bottom: 5px;
+    }
+    video{
+      visibility: hidden;
     }
 }
 
