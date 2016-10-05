@@ -43,6 +43,7 @@ body {
 #about-content{
   margin-top: 80px;
   font-size: 26px;
+  overflow: ;
 }
 
 #profile-pic{
@@ -266,6 +267,7 @@ button:focus { outline:0 !important; }
 @media screen and (max-width: 768px) and (min-width: 500px) {
     #home {
         background-image: url("../images/laptop_background.png");
+        background-repeat: no-repeat;
     }
     #home > img{
       margin-top: 100px;
